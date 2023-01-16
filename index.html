@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Abhaya Libre' rel='stylesheet'>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.2.js"></script>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Random String Generator</h1>
+        <div class="inputBlock">
+            <div class="input">
+                <p>String should be </p>
+                <input id="inputDigits" pattern="[0-9]{1,5}" type="text">
+                <p> characters long.</p>
+            </div>
+            <div>Which characters are allowed to occur in the strings?</div>
+            <div class="checkboxes">
+                <input type="checkbox" id="digits" name="digits" checked>
+                <label for="digits">Numeric digits (0-9)</label>
+            </div>
+            <div class="checkboxes">
+                <input type="checkbox" id="uppercase" name="uppercase">
+                <label for="uppercase">Uppercase letters(A-Z)</label>
+            </div>
+            <div class="checkboxes">
+                <input type="checkbox" id="lowercase" name="lowercase" checked>
+                <label for="lowercase">Lowercase letters(a-z)</label>
+            </div>
+            <button id="generate">Generate</button>
+        </div>
+        <br>
+        <div class="resultBlock">
+            <label for="result">Result</label>
+            <input type="text" id="result" name="result" size="10">
+        </div>
+
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
